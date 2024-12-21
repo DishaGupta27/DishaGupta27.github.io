@@ -18,6 +18,9 @@ body {
     background: var(--bg-oxford-red-2);
     color: var(--text-color);
     /* color: var(--text-shadow-red); */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -155,6 +158,33 @@ section {
 }
 
 /*  */
+/* @media (max-width: 768px) {
+    #nav-menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background: var(--bg-oxford-red);
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    #nav-menu a {
+        margin: 1rem 0;
+    }
+
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-active {
+        display: flex;
+    }
+} */
+
 
 .home {
 
@@ -284,7 +314,8 @@ span {
     text-align: center;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    /* gap: 2rem; */
+    margin-bottom: 0;
     background: var(--bg-oxford-red);
 }
 
@@ -422,6 +453,10 @@ span {
 }
 
 .project-tech-stack {
+    font-size: 2rem;
+}
+
+.project-description {
     font-size: 2rem;
 }
 
@@ -879,4 +914,87 @@ span {
 
 .contact-form .form-button:hover {
     background: #5b7987;
+}
+
+/* @media (max-width: 1024px) {
+    .header {
+        padding: 2rem;
+    }
+
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: var(--bg-oxford-red);
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .nav-active {
+        display: flex;
+    }
+
+    #nav-menu a {
+        margin: 1rem 0;
+    }
+} */
+
+@media (max-width: 768px) {
+    section {
+        padding: 8rem 3%;
+    }
+
+    .home-content h1 {
+        font-size: 4rem;
+        line-height: 1.2;
+    }
+
+    .home-content h3 {
+        font-size: 2.8rem;
+    }
+
+    .home-img img {
+        width: 300px;
+        height: 350px;
+    }
+
+    .button {
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .home-content h1 {
+        font-size: 3rem;
+    }
+
+    .home-content h3 {
+        font-size: 2.4rem;
+    }
+
+    .social-media a {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .skills-card-1 {
+        width: 90%;
+        margin: 1rem auto;
+    }
 }
