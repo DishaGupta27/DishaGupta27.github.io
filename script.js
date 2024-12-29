@@ -22,7 +22,7 @@ let resume2 = document.getElementById("resume-button-2").addEventListener("click
 
 function NewTab() {
     window.open(
-        "https://drive.google.com/file/d/1mRTi66W2qyvU9A8W_viPFZQmRsy4orGB/view?usp=sharing",
+        "./Resume/DishaGupta-FullStackWebDeveloper-LHVM.pdf",
         "_blank"
     );
 }
